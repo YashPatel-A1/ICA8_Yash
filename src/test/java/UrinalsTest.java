@@ -46,4 +46,12 @@ class UrinalsTest {
         System.out.println("====== Yash Patel == TEST FOUR EXECUTED =======");
     }
 
+    @Test
+    void cntUrinals() {
+        ArrayList<String> ipLst = new ArrayList<>( Arrays.asList("101","0100010","00100101101010"));
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(0, 1, -1));
+        assertEquals(numbers,urinals.cntUrinals(ipLst));
+        System.out.println("====== Yash Patel == TEST FIVE EXECUTED =======");
+    }
+
 }

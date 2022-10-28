@@ -73,24 +73,45 @@ public class Urinals {
     }
 
 
-    public ArrayList<Integer> cntUrinal(ArrayList<String> strList){
-        int cnt;
-        for(int i=0;i<strList.size();i++){
-            String str = strList.get(i);
-            cnt = 0;
-            for(int j=0;j<str.length();j++){
-                if(j==0){
-                    if(str.charAt(0)=='0' && str.charAt(1)=='0'){
-                        cnt++;
+    public ArrayList<Integer> cntUrinals(ArrayList<String> inputLst ){
+        ArrayList<Integer> cntList = new ArrayList<>();
+        for (int i = 0;i<inputLst.size();i++){
+            String str = inputLst.get(i);
+            int nosUnr=0, n = str.length();
+
+            if(str.charAt(0)=='0' && str.charAt(1)=='0'){
+                nosUnr++;
+                StringBuffer strBuff = new StringBuffer(str);
+                strBuff.setCharAt(0, '1');
+                str = String.valueOf(strBuff);
+            }
+
+            for(int j=1;j<n-1;j++){
+                if(str.charAt(j-1)=='0' && str.charAt(j+1)=='0'  && str.charAt(j)=='0'){
+                    nosUnr++;
+                    StringBuffer strBuff1 = new StringBuffer(str);
+                    strBuff1.setCharAt(i, '1');
+                    str = String.valueOf(strBuff1);
+                }
+            }
+            if(str.charAt(n-1)=='0' && str.charAt(n-2)=='0'){
+                nosUnr++;
+                StringBuffer strBuff2 = new StringBuffer(str);
+                strBuff2.setCharAt(n-1, '1');
+                str = String.valueOf(strBuff2);
+            }
+            for(int z=0;z<n-1;z++){
+                if(n>1){
+                    if(str.charAt(z)=='1' && str.charAt(z+1)=='1'){
+                        nosUnr = -1;
                     }
                 }
-
             }
-            cntList.add(cnt);
+            cntList.add(nosUnr);
         }
         return cntList;
-
     }
+
 
 
 }
