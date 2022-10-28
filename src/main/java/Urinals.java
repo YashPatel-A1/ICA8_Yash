@@ -11,8 +11,16 @@ public class Urinals {
     ArrayList<String> inputs = new ArrayList<>();
     ArrayList<Integer> cntList = new ArrayList<>();
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        Urinals obj = new Urinals();
+        String fileLoc = "src/urinal.dat";
+        Boolean operateFile = obj.openFile(fileLoc);
+        System.out.println("urinal.dat File: "+operateFile+"\nArrayList Initiated" );
+        ArrayList<Integer> cntLst = new ArrayList<>();
+        cntLst = obj.cntUrinals(obj.inputs);
+        System.out.println("Input verification & Output ArrayList calculated");
+        Boolean ruleCreated = obj.appendData(cntLst);
+        System.out.println("Output file generated at : rule.txt: "+ruleCreated);
     }
 
     public Boolean openFile(String pathStr){

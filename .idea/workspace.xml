@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ebbaabcd-e318-483e-9ae5-4134bb5a8cde" name="Changes" comment="Generated 2nd Test Case.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rule.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Urinals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/urinal.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/urinal.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
