@@ -54,4 +54,32 @@ class UrinalsTest {
         System.out.println("====== Yash Patel == TEST FIVE EXECUTED =======");
     }
 
+    @Test
+    void fileDosentExists() {
+        String pathStr = "src/urinals.dat";
+        assertEquals(false,urinals.openFile(pathStr));
+        System.out.println("====== Yash Patel == TEST SIX EXECUTED =======");
+    }
+
+    @Test
+    void emptyFileChk() {
+        String pathStr = "src/urinal.dat";
+        assertEquals(false,urinals.emptyFileChk(pathStr));
+        System.out.println("====== Yash Patel == TEST SEVEN EXECUTED =======");
+    }
+
+    @Test
+    void IOException() {
+        String pathStr = "src/urinals.dat";
+        assertEquals(false,urinals.openFile(pathStr));
+        System.out.println("====== Yash Patel == TEST EIGHT EXECUTED =======");
+    }
+
+    @Test
+    void fileDuplication() throws IOException {
+        ArrayList<Integer> ipNum = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6));
+        assertEquals(true,urinals.appendData(ipNum));
+        System.out.println("====== Yash Patel == TEST NINE EXECUTED =======");
+    }
+
 }

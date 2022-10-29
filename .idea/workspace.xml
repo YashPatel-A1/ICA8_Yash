@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebbaabcd-e318-483e-9ae5-4134bb5a8cde" name="Changes" comment="Generated 2nd Test Case.">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rule.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rule.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Urinals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Urinals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/urinal.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/urinal.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UrinalsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +39,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ASU\Sem_1\SER515\ICA8_TestingIndividual\ICA8_Yash\src\main\java" />
@@ -108,8 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UrinalsTest.cntUrinals" />
         <item itemvalue="Gradle.UrinalsTest" />
+        <item itemvalue="Gradle.UrinalsTest.cntUrinals" />
       </list>
     </recent_temporary>
   </component>

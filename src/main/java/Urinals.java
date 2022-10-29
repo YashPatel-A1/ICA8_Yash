@@ -27,16 +27,21 @@ public class Urinals {
         try{
             String data;
             File obj = new File(pathStr);
-            Scanner sc = new Scanner(obj);
-            while(sc.hasNextLine()){
-                data = sc.nextLine();
+            BufferedReader bfRdr = new BufferedReader(new FileReader(obj));
+
+            while ((data = bfRdr.readLine()) != null) {
+                if (data.equals("EOF") || data.equals("-1")) {
+                    break;
+                }
                 inputs.add(data);
-            }
-            sc.close();
+                }
+            bfRdr.close();
             return true;
 
         } catch (FileNotFoundException e) {
             return false;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -54,7 +59,8 @@ public class Urinals {
     }
 
     public Boolean appendData(ArrayList<Integer> results) throws IOException {
-        File fileObj = new File("rule.txt");
+        int cntr = 0;
+        File fileObj = new File("rule"+cntr+".txt");
         try {
             if (fileObj.createNewFile()) {
                 FileWriter fileWriter = new FileWriter(fileObj);
@@ -63,8 +69,11 @@ public class Urinals {
                     buffWriter.write(result + "");
                     buffWriter.newLine();
                 }
+                cntr++;
                 buffWriter.close();
             } else {
+                cntr++;
+                fileObj = new File("rule"+cntr+".txt");
                 FileWriter writer = new FileWriter(fileObj);
                 BufferedWriter addresult = new BufferedWriter(writer);
                 for(Integer result : results) {
@@ -121,7 +130,10 @@ public class Urinals {
     }
 
 
-
+    public boolean emptyFileChk(String pathStr) {
+        File fileObj = new File(pathStr);
+        return fileObj.length() == 0;
+    }
 }
 
 
